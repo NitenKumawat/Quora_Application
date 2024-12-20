@@ -63,7 +63,7 @@ const PostSection = () => {
   return (
     <div className="bg-gray-100  m-3 h-fit  border-spacing-1 rounded-lg relative text-gray-600 text-sm z-0">
       {posts.map(post => (
-        <div key={post.id} className="card bg-white p-4 mb-6 border rounded-lg shadow-lg relative">
+        <div key={post.id} className="card bg-white p-4 mb-3 border rounded-lg shadow-lg relative">
           {/* Header */}
           <div className="flex w-fit">
             <Avatar round size="25" className="mt-0.5 ml-2 cursor-pointer" src={post.profileImage} name={post.name} />
