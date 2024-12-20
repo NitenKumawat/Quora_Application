@@ -29,8 +29,8 @@ const Filter = () => {
     };
 
     return (
-        <div className="pl-4 sm:pl-20 pt-5 text-sm">
-            <button className="bg-gray-200 text-gray-500 py-2 px-4 rounded hover:bg-gray-300 z-0">
+        <div className=" sm:pl-20 mt-1 text-sm">
+            <button className="w-full bg-gray-200 text-gray-500 py-2 px-4 rounded hover:bg-gray-300 z-0">
                 + Create Space
             </button>
             
