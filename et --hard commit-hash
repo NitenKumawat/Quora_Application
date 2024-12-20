@@ -1,0 +1,13 @@
+[33mcc9e502[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mquoraV3[m[33m, [m[1;31morigin/quoraV3[m[33m)[m HEAD@{0}: commit (merge): Merge branch 'main' of https://github.com/NitenKumawat/Quora_Application into quoraV3
+[33mdc22304[m HEAD@{1}: commit: Quora version 3
+[33mbe9d672[m HEAD@{2}: checkout: moving from main to quoraV3
+[33m91eb80a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: pull origin main: Fast-forward
+[33mbe9d672[m HEAD@{4}: checkout: moving from quoraV3 to main
+[33mbe9d672[m HEAD@{5}: checkout: moving from main to quoraV3
+[33mbe9d672[m HEAD@{6}: checkout: moving from quoraV2 to main
+[33md83a2e0[m[33m ([m[1;31morigin/quoraV2[m[33m)[m HEAD@{7}: commit: version 2
+[33m431fe95[m HEAD@{8}: commit: active links added in navbar
+[33mbe9d672[m HEAD@{9}: checkout: moving from main to quoraV2
+[33mbe9d672[m HEAD@{10}: pull --tags origin main: Fast-forward
+[33md21d164[m HEAD@{11}: Branch: renamed refs/heads/main to refs/heads/main
+[33md21d164[m HEAD@{13}: commit (initial): first commit
