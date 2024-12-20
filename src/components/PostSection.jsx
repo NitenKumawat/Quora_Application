@@ -59,6 +59,7 @@ const PostSection = () => {
     });
     setPosts(updatedPosts);
   };
+  
 
   return (
     <div className="bg-gray-100  m-3 h-fit  border-spacing-1 rounded-lg relative text-gray-600 text-sm z-0">
@@ -91,7 +92,10 @@ const PostSection = () => {
             {/* Upvote Button */}
             <div className="flex items-center space-x-1 border rounded-full rounded-r-none px-3 py-1 mr-0 hover:bg-gray-100 cursor-pointer">
               <button onClick={() => handleUpvote(post.id)} className="flex items-center">
-                <img src={arrow} className={`h-5 w-7 text-lg ${post.upvoted ? "text-blue-500" : "text-gray-500"}`} alt="" />
+                
+                <svg xmlns="http://www.w3.org/2000/svg"  className={` text-lg ${post.upvoted ? "text-blue-500" : "text-gray-500"}`} width="16" height="16" fill="currentColor" class="bi bi-shift" viewBox="0 0 16 16">
+  <path  d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816zM14.346 9.5 8 2.731 1.654 9.5H4.5a1 1 0 0 1 1 1v3h5v-3a1 1 0 0 1 1-1z"/>
+</svg>
                 <span className={`ml-1 font-semibold ${post.upvoted ? "text-blue-500" : "text-gray-500"}`}>
                   Upvote·{post.upvotes.toLocaleString()}
                 </span>
@@ -100,8 +104,15 @@ const PostSection = () => {
 
             {/* Downvote Button */}
             <div onClick={() => handleDownvote(post.id)} className="flex items-center border rounded-full rounded-l-none pr-1 py-1 ml-0 hover:bg-gray-100 cursor-pointer">
-              <img src={arrow} className={`h-5 w-7 rotate-180 ml-1 ${post.dvoted ? "filter brightness-0 saturate-100 text-red-500" : "text-gray-500"}`} />
-              ·{post.downvotes.toLocaleString()}
+              
+            <svg xmlns="http://www.w3.org/2000/svg" className={`ml-1 ${post.dvoted ? "text-red-500" : "text-gray-500"}`} width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816zM14.346 9.5 8 2.731 1.654 9.5H4.5a1 1 0 0 1 1 1v3h5v-3a1 1 0 0 1 1-1z" transform="rotate(180 8 8)" />
+</svg>
+
+<span className={`ml-1 font-semibold ${post.dvoted ? "text-red-500" : "text-gray-500"}`}>
+·{post.downvotes.toLocaleString()}
+                </span>
+              
             </div>
 
             {/* Comment Button */}

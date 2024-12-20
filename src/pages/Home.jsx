@@ -28,7 +28,7 @@ const Home = () => {
           </div>
 
           {/* Right Column - Optional Component */}
-          <div className="lg:flex flex-col w-1/4 bg-white h-fit p-4 mx-2 mt-3 shadow-md rounded sticky top-16">
+          <div className="lg:flex flex-col w-1/4 bg-white h-fit p-4 mx-2 mt-3 shadow-md rounded  sticky top-16">
             <div>
               <h2 className="text-lg font-semibold">Right Column</h2>
               <p className="text-gray-600">Content for the right column goes here.</p>
