@@ -4,7 +4,7 @@ import ASKQues from "./ASKQues";
 import question from "../assets/question.png";
 import pen from "../assets/pen.png";
 import edit from "../assets/edit.png";
-
+import NitenImg from '../assets/niten.jpeg'
 const SearchQA = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [tab, setTab] = useState("Add Question"); // Track the current tab for the modal
@@ -17,7 +17,7 @@ const SearchQA = () => {
   return (
     <div className="bg-white p-2 m-3 h-22 border border-spacing-1 rounded-lg">
       <div className="flex mt-1.5">
-        <Avatar round size="25" className="mt-0.5 ml-2 cursor-pointer" src="" name="niten" />
+        <Avatar round size="25" className="mt-0.5 ml-2 cursor-pointer" src={NitenImg} name="niten" />
         <input
           type="text"
           className="bg-gray-100 p-1 ml-4 placeholder-gray-400 border border-spacing-1 rounded-full w-full"

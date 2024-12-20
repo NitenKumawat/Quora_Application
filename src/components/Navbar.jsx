@@ -1,15 +1,12 @@
-import bell from "../assets/bell.png";
+
 import globe from "../assets/globe.png";
-import group from "../assets/group.png";
-import clipboard from "../assets/clipboard.png";
-import edit from "../assets/edit.png";
-import home from "../assets/home.png";
 import quora from "../assets/quora.png";
 import lens from "../assets/lens.png";
 import Avatar from "react-avatar";
 import { useState } from "react";
 import ASKQues from "./ASKQues";
 import { NavLink } from "react-router-dom";
+import NitenImg from '../assets/niten.jpeg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center w-full justify-center space-x-4 sm:space-x-16 sm:pl-20 pt-3 shadow-md h-14 z-0 px-4 sm:px-20 border-b-2">
+      <div className="flex items-center w-full justify-center space-x-4 sm:space-x-16 sm:pl-20 pt-3 shadow-md h-14 z-0 px-4 sm:px-20 border-b-2 ">
         {/* Quora Logo */}
         <NavLink to="/" className="flex-shrink-0 mr-3 mb-3">
           <img className="w-24 h-7 cursor-pointer" src={quora} alt="Quora" />
@@ -43,20 +40,13 @@ const Navbar = () => {
           <NavLink to="/clipboard" className={navLinkStyles}>
           <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1792 256v1792H256V256h512q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100h512zM640 512h768V384h-256V256q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50v128H640v128zm1024-128h-128v256H512V384H384v1536h1280V384zM768 896h768v128H768V896zm0 384h768v128H768v-128zm0 384h768v128H768v-128zM512 896h128v128H512V896zm0 384h128v128H512v-128zm0 384h128v128H512v-128z"/></svg>
           </NavLink>
-          <NavLink to="/addQuestion" className={navLinkStyles}>
+          <NavLink to="/answer" className={navLinkStyles}>
         
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
   <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
   <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
 </svg>
 
-            {isOpen && (
-            <ASKQues
-              isOpen={isOpen}
-              setIsOpen={setIsOpen}
-              initialTab={"Add Question"}
-            />
-          )}
           </NavLink>
           <NavLink to="/group" className={navLinkStyles}>
            
@@ -86,10 +76,10 @@ const Navbar = () => {
             Try Quora+
           </h1>
           <img src={globe} alt="Globe" className="w-5 h-5 cursor-pointer hover:text-red-400 " />
-          <Avatar round size="30" className="cursor-pointer" name="niten" />
+          <Avatar src={NitenImg} round size="30" className="cursor-pointer " name="niten" />
           <h1
             onClick={() => setIsOpen(true)}
-            className="bg-red-700 rounded-full text-sm cursor-pointer text-white w-36 pl-6 pt-2 h-9"
+            className="bg-red-700 rounded-full text-sm cursor-pointer  text-white w-36 pl-6 pt-2 h-9"
           >
             Add Question
           </h1>

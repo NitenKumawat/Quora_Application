@@ -1,41 +1,81 @@
 import Avatar from "react-avatar";
-import arrow from '../assets/arrow.png';
+
 import React, { useState } from 'react';
 import close from '../assets/close.png'; // Ensure this is the correct path
 import share from '../assets/share.png';
 import comment from '../assets/comment.png';
-import paper from '../assets/paper.jpg';
+
 
 const PostSection = () => {
   const [posts, setPosts] = useState([
-    {
-      id: 1,
-      name: 'John Doe',
-      profileImage: '', // You can provide profile image here
-      title: 'Movie Night Review',
-      content: 'Just watched the latest movie and it was amazing!',
-      upvotes: 3100,
-      downvotes: 31,
-      comments: 30,
-      shares: 14,
-      category: 'Movie Addict',
-      timeAgo: '5d',
-      image: paper // Dynamic image URL for each post
-    },
+    
+    
+      {
+        id: 1,
+        name: 'Raj Sharma',
+        profileImage: 'https://cdn.razorpay.com/logos/KCAttgJ1F1ThQ9_large.jpg', // You can provide profile image here
+        title: 'Movie Night Review',
+        content: 'Just watched the latest movie and it was amazing!',
+        upvotes: 3100,
+        downvotes: 31,
+        comments: 30,
+        shares: 14,
+        Qualifications: 'Engineer,Movie Addict',
+        timeAgo: '5d',
+        image: "https://miro.medium.com/v2/resize:fit:1200/1*3PWG4m-Sh3wV4hTiWUJxgQ.jpeg" // Dynamic image URL for each post
+      },
+      
     {
       id: 2,
-      name: 'Jane Smith',
-      profileImage: '', // You can provide profile image here
-      title: 'Tech Trends of 2024',
-      content: 'The future of technology is looking very bright, here’s why...',
-      upvotes: 500,
-      downvotes: 15,
-      comments: 25,
-      shares: 8,
-      category: 'Tech Enthusiast',
-      timeAgo: '2d',
-      image: paper // Dynamic image URL for each post
-    }
+      name: 'Teemyco',
+      profileImage: 'https://www.eu-startups.com/wp-content/uploads/2021/06/1611785470095.jpeg', // You can provide profile image here
+      title: 'Effortless Interactions in Remote Work.',
+      content: 'Bridge remote distances with quick, on-the-fly virtual team interactions.',
+      upvotes: 1200,
+      downvotes:52 ,
+      comments: 451,
+      shares: 897,
+      Qualifications: 'Sponsored',
+      timeAgo: '',
+      image: 'https://th.bing.com/th/id/OIP.tl04bMkLVrRr6WRDJinftAHaEi?rs=1&pid=ImgDetMain' // Dynamic image URL for each post
+    },
+    {
+      id: 3,
+      name: 'TARUN SAI 2030',
+      profileImage: 'https://hips.hearstapps.com/hmg-prod/images/gettyimages-1673453535.jpg?resize=1200:*', // You can provide profile image here
+      title: 'How can you imorove yourself reqularly?',
+      content: `1. Fix your schedule and sleep at 9:00 PM to be awake at 4:00 AM.
+
+2. Quit your excuses and work out for 30 minutes daily.
+
+3. Include 2 eggs plus fresh fruits to optimize your health.
+
+4. Prioritize 2 cold showers a day with no excuses. I promise your self-discipline will be boosted.
+
+5. Listen more than you talk and be teachable.`,
+      upvotes:4512 ,
+      downvotes:21 ,
+      comments: 4541,
+      shares: 1213,
+      Qualifications:   `BTech ( Mechanical ) from Vignan's Institute of Information Technology  `,
+      timeAgo: 'Jan 30',
+      image: 'https://qph.cf2.quoracdn.net/main-qimg-9a48ca0f52257bca2226990ab883db47' // Dynamic image URL for each post
+    },
+    {
+      id:4 ,
+      name: 'Perdeep Kumar',
+      profileImage: 'https://pbs.twimg.com/profile_images/470091447887077376/ZL5stHAG_400x400.jpeg', // You can provide profile image here
+      title: "How is Chandigarh University's CSE better than other private universities in India?",
+      content: "This is really an interesting question. I will tell you this after introducing myself first. Last year, I was searching for Computer Science Engineering. And my research came to an end at Chandigarh University. There are not one but numerous reasons for pursuing Computer Science Engineering at Chandigarh University. I have been studying in CU since last year and my experience has been going really well.",
+      upvotes: 448,
+      downvotes: 24,
+      comments: 452,
+      shares: 2433,
+      Qualifications: 'Ph.D. in Management & Marketing',
+      timeAgo: 'Feb 22',
+      image: 'https://mma.prnewswire.com/media/1751390/Chandigarh_University.jpg?p=facebook' // Dynamic image URL for each post
+    },
+    
   ]);
 
   const handleUpvote = (postId) => {
@@ -77,7 +117,7 @@ const PostSection = () => {
             </button>
           </div>
           <div className="relative -top-2 left-11 text-xs font-semibold text-gray-500">
-            <span>{post.category}</span> · <span>{post.timeAgo}</span>
+            <span>{post.Qualifications}</span> · <span>{post.timeAgo}</span>
           </div>
 
           {/* Title and Content */}

@@ -1,24 +1,47 @@
-import finance from "../assets/finance.jpg"
-import living from "../assets/living.jpg"
-import science from "../assets/science.jpg"
+
 
 const Filter = () => {
     const details = [
         {
             id: 1,
-            src: finance,
+            src: "https://cdn.corporatefinanceinstitute.com/assets/finance-definition.jpg",
             title: 'Finance'
         },
         {
             id: 2,
-            src: living,
+            src: "https://static.vecteezy.com/system/resources/previews/000/302/562/original/healthy-lifestyle-vector-illustration.jpg",
             title: 'Healthy living'
 
         },
         {
             id: 3,
-            src: science,
-            title: 'Science'
+            src: "https://hranker.com/blog/wp-content/uploads/2021/03/government-of-india.jpg",
+            title:  'Government of India',
+
+        },
+
+        {
+            id: 4,
+            src: "https://www.fintechfutures.com/files/2020/02/State-Bank-of-India-Logo-2.png",
+            title: "State Bank of India (SBI)",
+
+        },
+        {
+            id: 5,
+            src: "https://egwtgphxxkn.exactdn.com/wp-content/uploads/2022/02/best-career-advice-The-Mason-Group.jpg",
+            title: 'Career Advice',
+
+        },
+        {
+            id: 6,
+            src: "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/u/k/m/small-spos8969-poster-bjp-logo-bhartiya-janta-party-sl-9477-wall-original-imaghs5nxqb3jkpf.jpeg?q=20&crop=false",
+            title: "Bharatiya Janta Party",
+
+        },
+        {
+            id: 7,
+            src: "https://th.bing.com/th/id/OIP.QdIrCNdF2ZVylABjjes1LAHaGq?rs=1&pid=ImgDetMain",
+            title: "React Community",
 
         },
     ];

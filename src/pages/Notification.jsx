@@ -2,12 +2,11 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 
 const Notification = () => {
-  return (
-    <div className=" bg-white">
-      <Navbar />
+  return (<>
+<Navbar />
       <div className="flex justify-center  w-full min-h-srceen">
         {/* Main Container */}
-        <div className="flex w-full max-w-screen-xl px-7   overflow-hidden">
+        <div className="flex w-full max-w-screen-xl px-7 overflow-hidden">
           {/* Sidebar */}
           <div className="p-6">
             <div className="flex items-center justify-between">
@@ -61,7 +60,10 @@ const Notification = () => {
           </div>
         </div>
       </div>
-    </div>
+  </>
+    
+      
+ 
   );
 };
 

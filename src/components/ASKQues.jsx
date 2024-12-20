@@ -2,7 +2,7 @@
 
 
 import React, { useState,useEffect } from "react";
-
+import NitenImg from '../assets/niten.jpeg'
 
 const ASKQues = ({ isOpen, setIsOpen,initialTab }) => {
   const [tab, setTab] = useState(initialTab);
@@ -20,7 +20,7 @@ const ASKQues = ({ isOpen, setIsOpen,initialTab }) => {
 
    
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-70 z-50">
-  <div className="bg-white rounded-lg w-full max-w-4xl max-h-screen h-4/5 shadow-lg m-16 relative">
+  <div className="bg-white rounded-lg w-full max-w-4xl max-h-screen h-3/5 shadow-lg  relative">
     <div>
       <button className="text-gray-500 ml-8 mt-5 text-2xl hover:text-gray-700" onClick={() => setIsOpen(false)} // Close the modal
       >
@@ -64,7 +64,8 @@ const ASKQues = ({ isOpen, setIsOpen,initialTab }) => {
 
         <div className="p-4">
           <div className="flex items-center space-x-2 mb-3">
-            <span className="rounded-full bg-gray-300 h-6 w-6">N</span>
+            <img className="rounded-full bg-gray-300 h-6 w-6" src={NitenImg} alt="N" />
+          
             <select
               className="text-gray-600 border rounded-full px-2 py-1 text-sm hover:bg-gray-100"
               defaultValue="Public"
@@ -94,7 +95,7 @@ const ASKQues = ({ isOpen, setIsOpen,initialTab }) => {
       <>
         <div className="flex items-center px-4 py-3 space-x-3">
           <img
-            src="https://via.placeholder.com/40" // Replace with actual profile image
+            src={NitenImg} // Replace with actual profile image
             alt="Profile"
             className="rounded-full w-10 h-10"
           />
