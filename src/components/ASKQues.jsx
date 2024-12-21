@@ -20,7 +20,7 @@ const ASKQues = ({ isOpen, setIsOpen,initialTab }) => {
 
    
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-70 z-50">
-  <div className="bg-white rounded-lg w-full max-w-4xl max-h-screen h-3/5 shadow-lg  relative">
+  <div className="bg-white rounded-lg w-full max-w-5xl max-h-screen  shadow-lg aspect-video  relative">
     <div>
       <button className="text-gray-500 ml-8 mt-5 text-2xl hover:text-gray-700" onClick={() => setIsOpen(false)} // Close the modal
       >
